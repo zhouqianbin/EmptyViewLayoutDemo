@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--加载中-->
+    <ViewStub
+        android:id="@+id/view_stub_empty_loadding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/empty_loadding"
+        />
+
+    <!--其他状态 加载失败，没有网络，连接超时-->
+    <ViewStub
+        android:id="@+id/view_stub_empty_other"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inflatedId="@+id/empty_other_view"
+        android:layout="@layout/empty_other_view"
+        />
+
+
+
+
+</RelativeLayout>

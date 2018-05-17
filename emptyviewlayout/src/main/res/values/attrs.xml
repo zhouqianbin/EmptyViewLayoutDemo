@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="EmptyViewLayout">
+
+        <attr name="loaddingText" format="string"/>
+        <attr name="loaddingTextColor" format="color"/>
+        <attr name="loaddingTextSize" format="dimension"/>
+    
+        <attr name="loaddingFailImage" format="reference"/>
+        <attr name="loaddingFailText" format="string"/>
+        <attr name="loaddingFailTextColor" format="color"/>
+        <attr name="loaddingFailTextSize" format="dimension"/>
+
+        <attr name="noNetImage" format="reference"/>
+        <attr name="noNetText" format="string"/>
+        <attr name="nNetTextColor" format="color"/>
+        <attr name="noNetTextSize" format="dimension"/>
+
+        <attr name="timeOutImage" format="reference"/>
+        <attr name="timeOutText" format="string"/>
+        <attr name="timeOutTextColor" format="color"/>
+        <attr name="timeOutTextSize" format="dimension"/>
+
+        <attr name="textAndImageMargin" format="dimension"/>
+
+    </declare-styleable>
+
+
+
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/test1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="加载中" />
+
+        <Button
+            android:id="@+id/test2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="加载失败" />
+
+        <Button
+            android:id="@+id/test3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="没有网络" />
+
+        <Button
+            android:id="@+id/test4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="连接超时" />
+
+        <Button
+            android:id="@+id/test5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="加载成功" />
+
+    </LinearLayout>
+
+
+    <com.woodman.emptyviewlayout.EmptyViewLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/empty_view"
+        app:loaddingFailText="加载失败"
+        app:noNetText="没有网络拉"
+        app:timeOutText="网络连接超时啊"
+        app:loaddingText="加载中..."
+        app:textAndImageMargin="40dp"
+        android:layout_below="@id/tool"
+        >
+    </com.woodman.emptyviewlayout.EmptyViewLayout>
+
+
+
+
+</RelativeLayout>
